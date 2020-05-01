@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block head_title %} {{ title }} || {{ block.super }} {% endblock head_title %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+
+{% include 'snippets/form-snippet.html' %}
+
+<!--{% if form.errors.non_field_errors %}-->
+<!--{{ form.errors.non_field_errors }}-->
+<!--{% endif %}-->
+<!--<form method="POST">-->
+<!--    {% csrf_token %}-->
+<!--    {{ form.as_p }}-->
+<!--    <button type="submit">Save</button>-->
+
+<!--</form>-->
+
+
+<!--
+{% if form.instance %}
+<h1>{{ form.instance.name }}</h1>   this will print only in update view.. not in create view
+{%endif%}
+-->
+
+{% endblock %}
